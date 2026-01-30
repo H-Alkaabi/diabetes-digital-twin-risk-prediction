@@ -60,7 +60,7 @@ Several interaction and composite features are constructed, including:
 
 3\. Run the model script:
 
-   python run\_models.py
+   python run\run_models.py
 
 
 
