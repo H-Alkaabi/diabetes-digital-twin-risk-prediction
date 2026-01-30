@@ -1,1 +1,87 @@
-\# Predicting Complications Risk in Type 2 Diabetes ManagementThis repository provides the implementation used in the paper:"Predicting complications in type 2 diabetes management using personalized digital twins: A focus on early intervention and prevention strategies".\## DatasetThe experiments are conducted using the public BRFSS 2015 dataset:diabetes\_012\_health\_indicators\_BRFSS2015.csvThe dataset is publicly available and derived from the CDC Behavioral Risk Factor Surveillance System (BRFSS).\## ModelsThe following machine learning models are implemented:\- Random Forest Classifier\- XGBoost Classifier\## Feature EngineeringSeveral interaction and composite features are constructed, including:\- Patient characteristics index\- Health status index\- Lifestyle score\- Healthcare access indicator\- Age-related risk interactions\## How to Run1\. Install the required dependencies:   pip install -r requirements.txt2\. Place the dataset file in the same directory as the Python script.3\. Run the model script:   python run\_models.py\## OutputThe script outputs:\- Accuracy and classification report\- ROC-AUC score\- 5-fold cross-validation accuracy for each model\## ReproducibilityThe provided code and dataset allow full reproduction of the experimental results reported in the paper.\## This code is provided for research reproducibility purposes.
+\# Predicting Complications Risk in Type 2 Diabetes Management
+
+
+
+This repository provides the implementation used in the paper:
+
+"Predicting complications in type 2 diabetes management using personalized digital twins: A focus on early intervention and prevention strategies".
+
+
+
+\## Dataset
+
+The experiments are conducted using the public BRFSS 2015 dataset:
+
+diabetes\_012\_health\_indicators\_BRFSS2015.csv
+
+
+
+The dataset is publicly available and derived from the CDC Behavioral Risk Factor Surveillance System (BRFSS).
+
+
+
+\## Models
+
+The following machine learning models are implemented:
+
+\- Random Forest Classifier
+
+\- XGBoost Classifier
+
+
+
+\## Feature Engineering
+
+Several interaction and composite features are constructed, including:
+
+\- Patient characteristics index
+
+\- Health status index
+
+\- Lifestyle score
+
+\- Healthcare access indicator
+
+\- Age-related risk interactions
+
+
+
+\## How to Run
+
+1\. Install the required dependencies:
+
+   pip install -r requirements.txt
+
+
+
+2\. Place the dataset file in the same directory as the Python script.
+
+
+
+3\. Run the model script:
+
+   python run\_models.py
+
+
+
+\## Output
+
+The script outputs:
+
+\- Accuracy and classification report
+
+\- ROC-AUC score
+
+\- 5-fold cross-validation accuracy for each model
+
+
+
+\## Reproducibility
+
+The provided code and preprocessing pipeline allow full reproduction of the experimental setup using the publicly available BRFSS dataset.
+
+
+
+
+\## This code is provided for research reproducibility purposes.
+
